@@ -71,3 +71,24 @@ def find_extreme(category, extreme="Highest"):
         }
     }
 
+def bogo_price(cart_item):
+    for item_number, quantity in cart_item.items():
+        item_number = int(item_number)
+        
+    for product in catalog:
+        if product["item"] == item_number:
+            price = product["price"]
+            
+            half_price_items = quantity // 2
+            full_price_items = quantity - half_price_items
+            
+            extended_price = (price / 2)* half_price_items + price * full_price_items
+            break
+        
+    return f"$ {extended_price:.2f}"
+    
+print(bogo_price({
+    "120": 3
+}))
+            
+            
