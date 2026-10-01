@@ -49,3 +49,25 @@ def find_price(item_number):
             }
         return "Item was not found."
         
+def find_extreme(category, extreme="Highest"):
+    selected_item = None
+    
+    for product in catalog:
+        if product["category"] == category:
+            if selected_item is None:
+                selected_item = product
+                
+            elif extreme.lower() == "highest":
+                if product["price"] > selected_item["price"]:
+                    selected_item = product
+                    
+    if selected_item is None:
+        return "Category not found."
+    return{
+        selected_item["item"]: {
+            "name": selected_item["name"],
+            "category": selected_item["category"],
+            "price": selected_item["price"]
+        }
+    }
+
