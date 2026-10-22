@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-01",
+    "course": "Project Management",
+    "minutes": 20,
+    "note": "Practiced building a work breakdown structure"
+  },
+  {
+    "date": "2026-07-01",
+    "course": "Project Management",
+    "minutes": 20,
+    "note": "Reviewed stakeholder communication plans"
+  },
+  {
+    "date": "2026-07-01",
+    "course": "Project Management",
+    "minutes": 60,
+    "note": "Read about risk management strategies"
+  },
+  {
+    "date": "2026-07-01",
+    "course": "Software Development",
+    "minutes": 70,
+    "note": "Practiced file I/O exercises"
+  },
+  {
+    "date": "2026-07-01",
+    "course": "Data Management",
+    "minutes": 20,
+    "note": "Worked through a data cleaning exercise"
+  },
+  {
+    "date": "2026-07-01",
+    "course": "Software Development",
+    "minutes": 55,
+    "note": "Built a small command-line tool"
+  },
+  {
+    "date": "2026-07-02",
+    "course": "Data Management",
+    "minutes": 60,
+    "note": "Reviewed notes on data warehousing concepts"
+  },
+  {
+    "date": "2026-07-02",
+    "course": "Data Management",
+    "minutes": 30,
+    "note": "Reviewed normalization rules"
+  },
+  {
+    "date": "2026-07-02",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Studied version control workflows with Git"
+  },
+  {
+    "date": "2026-07-02",
+    "course": "Project Management",
+    "minutes": 20,
+    "note": "Worked on a sample Gantt chart"
+  },
+  {
+    "date": "2026-07-02",
+    "course": "Software Development",
+    "minutes": 45,
+    "note": "Built a small command-line tool"
+  },
+  {
+    "date": "2026-07-03",
+    "course": "Project Management",
+    "minutes": 65,
+    "note": "Reviewed stakeholder communication plans"
+  },
+  {
+    "date": "2026-07-03",
+    "course": "Software Development",
+    "minutes": 40,
+    "note": "Read about design patterns"
+  },
+  {
+    "date": "2026-07-03",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Built a small command-line tool"
+  },
+  {
+    "date": "2026-07-03",
+    "course": "Data Management",
+    "minutes": 65,
+    "note": "Built a small sample database schema"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Software Development",
+    "minutes": 60,
+    "note": "Paired with a classmate on a coding problem"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Software Development",
+    "minutes": 55,
+    "note": "Studied for the upcoming coding quiz"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Software Development",
+    "minutes": 25,
+    "note": "Practiced file I/O exercises"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Project Management",
+    "minutes": 35,
+    "note": "Worked through a budgeting exercise"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Data Management",
+    "minutes": 55,
+    "note": "Studied indexing and query performance"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Data Management",
+    "minutes": 40,
+    "note": "Practiced writing SELECT queries"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Software Development",
+    "minutes": 15,
+    "note": "Read about design patterns"
+  },
+  {
+    "date": "2026-07-04",
+    "course": "Project Management",
+    "minutes": 35,
+    "note": "Practiced building a work breakdown structure"
+  },
+  {
+    "date": "2026-07-05",
+    "course": "Software Development",
+    "minutes": 60,
+    "note": "Studied for the upcoming coding quiz"
+  },
+  {
+    "date": "2026-07-05",
+    "course": "Project Management",
+    "minutes": 30,
+    "note": "Worked through a budgeting exercise"
+  },
+  {
+    "date": "2026-07-05",
+    "course": "Project Management",
+    "minutes": 45,
+    "note": "Worked through a budgeting exercise"
+  },
+  {
+    "date": "2026-07-05",
+    "course": "Project Management",
+    "minutes": 25,
+    "note": "Read about risk management strategies"
+  },
+  {
+    "date": "2026-07-06",
+    "course": "Software Development",
+    "minutes": 30,
+    "note": "Studied for the upcoming coding quiz"
+  },
+  {
+    "date": "2026-07-06",
+    "course": "Data Management",
+    "minutes": 55,
+    "note": "Practiced JOIN queries across three tables"
+  },
+  {
+    "date": "2026-07-07",
+    "course": "Data Management",
+    "minutes": 60,
+    "note": "Worked through a data cleaning exercise"
+  },
+  {
+    "date": "2026-07-07",
+    "course": "Data Management",
+    "minutes": 45,
+    "note": "Reviewed notes on data warehousing concepts"
+  },
+  {
+    "date": "2026-07-07",
+    "course": "Software Development",
+    "minutes": 25,
+    "note": "Worked on exception handling examples"
+  },
+  {
+    "date": "2026-07-07",
+    "course": "Project Management",
+    "minutes": 20,
+    "note": "Reviewed the project charter template"
+  },
+  {
+    "date": "2026-07-08",
+    "course": "Software Development",
+    "minutes": 25,
+    "note": "Paired with a classmate on a coding problem"
+  },
+  {
+    "date": "2026-07-08",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Refactored a practice project for readability"
+  },
+  {
+    "date": "2026-07-09",
+    "course": "Data Management",
+    "minutes": 20,
+    "note": "Worked through a data cleaning exercise"
+  },
+  {
+    "date": "2026-07-09",
+    "course": "Project Management",
+    "minutes": 60,
+    "note": "Studied for the PM terminology quiz"
+  },
+  {
+    "date": "2026-07-09",
+    "course": "Data Management",
+    "minutes": 35,
+    "note": "Practiced writing GROUP BY aggregate queries"
+  },
+  {
+    "date": "2026-07-09",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Studied for the upcoming coding quiz"
+  },
+  {
+    "date": "2026-07-09",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Worked on exception handling examples"
+  },
+  {
+    "date": "2026-07-10",
+    "course": "Project Management",
+    "minutes": 65,
+    "note": "Reviewed stakeholder communication plans"
+  },
+  {
+    "date": "2026-07-10",
+    "course": "Software Development",
+    "minutes": 35,
+    "note": "Refactored a practice project for readability"
+  },
+  {
+    "date": "2026-07-10",
+    "course": "Software Development",
+    "minutes": 50,
+    "note": "Reviewed object-oriented design principles"
+  },
+  {
+    "date": "2026-07-10",
+    "course": "Data Management",
+    "minutes": 70,
+    "note": "Practiced JOIN queries across three tables"
+  },
+  {
+    "date": "2026-07-11",
+    "course": "Data Management",
+    "minutes": 25,
+    "note": "Practiced writing GROUP BY aggregate queries"
+  },
+  {
+    "date": "2026-07-11",
+    "course": "Software Development",
+    "minutes": 65,
+    "note": "Built a small command-line tool"
+  },
+  {
+    "date": "2026-07-11",
+    "course": "Data Management",
+    "minutes": 55,
+    "note": "Reviewed backup and recovery strategies"
+  },
+  {
+    "date": "2026-07-11",
+    "course": "Software Development",
+    "minutes": 25,
+    "note": "Read about design patterns"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Software Development",
+    "minutes": 55,
+    "note": "Worked on exception handling examples"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Software Development",
+    "minutes": 60,
+    "note": "Read about design patterns"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Project Management",
+    "minutes": 15,
+    "note": "Practiced building a work breakdown structure"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Project Management",
+    "minutes": 35,
+    "note": "Worked on a sample Gantt chart"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Software Development",
+    "minutes": 30,
+    "note": "Reviewed notes on API design"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Software Development",
+    "minutes": 20,
+    "note": "Studied for the upcoming coding quiz"
+  },
+  {
+    "date": "2026-07-12",
+    "course": "Project Management",
+    "minutes": 20,
+    "note": "Outlined a sample sprint backlog"
+  },
+  {
+    "date": "2026-07-13",
+    "course": "Software Development",
+    "minutes": 25,
+    "note": "Paired with a classmate on a coding problem"
+  },
+  {
+    "date": "2026-07-13",
+    "course": "Project Management",
+    "minutes": 55,
+    "note": "Studied Agile vs. Waterfall case examples"
+  },
+  {
+    "date": "2026-07-13",
+    "course": "Project Management",
+    "minutes": 55,
+    "note": "Reviewed notes on scope creep case studies"
+  },
+  {
+    "date": "2026-07-13",
+    "course": "Project Management",
+    "minutes": 30,
+    "note": "Outlined a sample sprint backlog"
+  },
+  {
+    "date": "2026-07-13",
+    "course": "Data Management",
+    "minutes": 70,
+    "note": "Studied indexing and query performance"
+  }
+]
