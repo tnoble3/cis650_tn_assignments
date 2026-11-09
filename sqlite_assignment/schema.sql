@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS Album (
+    AlbumID INTEGER PRIMARY KEY AUTOINCREMENT,
+    AlbumTitle TEXT NOT NULL,
+    ArtistName TEXT NOT NULL,
+    RecordLabel TEXT NOT NULL,  
+    TotalDuration TEXT NOT NULL  --HH:MM:SS
+  
+);
+
+CREATE TABLE IF NOT EXISTS Tracks (
+    TrackID INTEGER PRIMARY KEY AUTOINCREMENT,
+    TrackTitle TEXT NOT NULL,
+    TotalDuration TEXT NOT NULL --seconds
+);
