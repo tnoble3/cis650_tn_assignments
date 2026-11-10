@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS Album (
 
 CREATE TABLE IF NOT EXISTS Tracks (
     trackID INTEGER PRIMARY KEY AUTOINCREMENT,
+    albumID INTEGER NOT NULL,
     trackTitle TEXT NOT NULL,
-    totalDuration INTEGER NOT NULL --seconds
+    totalDuration INTEGER NOT NULL, --seconds
     FOREIGN KEY (albumID) REFERENCES Album(albumID)
 );
