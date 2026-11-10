@@ -17,7 +17,7 @@ def init_db():
     conn.commit()
     conn.close()
     print("Database and tables were successfully created.")
-    
+#Add   
 def add_record(title, artist, label, duration):
     conn = get_connection()
     cursor = conn.cursor()
@@ -47,7 +47,7 @@ def add_track(albumid, title, duration):
     
     finally:
         conn.close()
-
+#View
 def get_all_albums():
     conn = get_connection()
     albums = pd.read_sql_query(
@@ -61,5 +61,44 @@ def get_all_tracks():
     tracks = pd.read_sql_query(
         "SELECT * FROM Tracks", conn
     )
+    conn.close()
+    return tracks
+
+ #Edit
+def update_record(albumid, title, artist, label, duration):
+    conn = get_connection()
+    cursor = conn.execute("""
+        UPDATE Album
+        SET albumTitle=?, artistName=?,
+            recordLabel=?, totalDuration=?
+        WHERE albumID=?
+    """, (title, artist, label, duration, albumid))
+    conn.commit()
+    rows = cursor.rowcount
+    conn.close()
+    return rows
+
+def update_track(trackid, title, duration):
+    conn = get_connection()
+    cursor = conn.execute("""
+        PDATE Tracks
+        SET trackTitle=?, totalDuration=?
+        WHERE trackID=?
+    """, (title, duration, trackid))
+    conn.commit()
+    rows = cursor.rowcount
+    conn.close()
+    return rows
+
+#param query
+def query_record(albumid):
+    conn = get_connection()
+
+    tracks = pd.read_sql_query("""
+        SELECT trackID, trackTitle, totalDuration
+        FROM Tracks
+        WHERE albumID=?
+    """, conn, params=(albumid,))
+
     conn.close()
     return tracks
