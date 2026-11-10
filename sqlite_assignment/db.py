@@ -1,4 +1,5 @@
 import sqlite3
+import pandas as pd
 DB_FILE = "music.db"
 
 def get_connection():
@@ -8,26 +9,11 @@ def get_connection():
 
 def init_db():
     conn = get_connection()
-    cursor = conn.cursor()
-    
-    cursor.execute("""
-                   CREATE TABLE IF NOT EXISTS Album (
-    albumID INTEGER PRIMARY KEY AUTOINCREMENT,
-    albumTitle TEXT NOT NULL,
-    artistName TEXT NOT NULL,
-    recordLabel TEXT NOT NULL,  
-    totalDuration TEXT NOT NULL  --HH:MM:SS
-  )""")
-    
-    cursor.execute("""
-                   CREATE TABLE IF NOT EXISTS Tracks (
-    trackID INTEGER PRIMARY KEY AUTOINCREMENT,
-    albumID INTEGER NOT NULL,
-    trackTitle TEXT NOT NULL,
-    totalDuration INTEGER NOT NULL, --seconds
-    FOREIGN KEY (albumID) REFERENCES Album(albumID)
-  )""")
-    
+
+    with open("schema.sql", "r") as file:
+        schema = file.read()
+
+    conn.executescript(schema)
     conn.commit()
     conn.close()
     print("Database and tables were successfully created.")
@@ -61,3 +47,19 @@ def add_track(albumid, title, duration):
     
     finally:
         conn.close()
+
+def get_all_albums():
+    conn = get_connection()
+    albums = pd.read_sql_query(
+        "SELECT * FROM Album", conn
+    )
+    conn.close()
+    return albums
+
+def get_all_tracks():
+    conn = get_connection()
+    tracks = pd.read_sql_query(
+        "SELECT * FROM Tracks", conn
+    )
+    conn.close()
+    return tracks
