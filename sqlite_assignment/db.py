@@ -40,13 +40,13 @@ def add_track(albumid, title, duration):
                    """,(albumid, title, duration))
         conn.commit()
         print("Track added to the database.")
-    
     except sqlite3.IntegrityError as error:
         conn.rollback()
         print(f"Track could not be added: {error}")
     
     finally:
         conn.close()
+        
 #View
 def get_all_albums():
     conn = get_connection()
