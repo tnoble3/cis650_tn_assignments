@@ -93,12 +93,37 @@ def update_track(trackid, title, duration):
 #param query
 def query_record(albumid):
     conn = get_connection()
-
     tracks = pd.read_sql_query("""
         SELECT trackID, trackTitle, totalDuration
         FROM Tracks
         WHERE albumID=?
     """, conn, params=(albumid,))
-
     conn.close()
     return tracks
+
+#Delete
+def delete_track(trackid):
+    conn = get_connection()
+    cursor = conn.execute(
+        "DELETE FROM Tracks WHERE trackID=?",
+        (trackid,)
+    )
+    conn.commit()
+    rows = cursor.rowcount
+    conn.close()
+    return rows
+
+def delete_record(albumid):
+    conn = get_connection()
+    try:
+        cursor = conn.execute(
+            "DELETE FROM Album WHERE albumID=?",
+            (albumid,)
+        )
+        conn.commit()
+        return cursor.rowcount
+    finally:
+        conn.close()
+
+if __name__ == "__main__":
+    init_db()
