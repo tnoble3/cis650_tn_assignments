@@ -81,7 +81,7 @@ def update_record(albumid, title, artist, label, duration):
 def update_track(trackid, title, duration):
     conn = get_connection()
     cursor = conn.execute("""
-        PDATE Tracks
+        UPDATE Tracks
         SET trackTitle=?, totalDuration=?
         WHERE trackID=?
     """, (title, duration, trackid))
